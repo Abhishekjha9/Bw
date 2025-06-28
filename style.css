@@ -40,35 +40,86 @@ body, html{
     transition: 0.5s ease ;
 }
 
-#content{
+#content1{
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+    padding: 10px;
 }
 
 #part1{
     height: 70vh;
     width: 40%;
     position: relative;
+    padding: 5vw 0vw;
+    padding-left: 4vw;
 }
 
 #part1 img{
-    height: 120%;
+    height: 100%;
     transform: scaleX(-1);
+    border-radius: 10px;
 }
 
 #part1 h1{
     position: absolute;
-    top:50%;
-    left: 20%;
-    font-size: 8vw;
-    color: #ff62c3;
-    transform: rotate(-20deg);
+    top:48%;
+    left:40%;
+    font-size: 6vw;
+    color: #BA487F;
+    /* color:rgb(255, 251, 246) ; */
+    padding: 2vw 1vw;
+    border-radius: 10px;
+    transform: rotate(-27deg);
     font-family: Festive;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
-    line-height: 8vw;
+    /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39); */
+    line-height: 5vw;
+    font-weight: 200;
 }
 
 #part2{
-    height: 70vh;
+    height: 50vh;
     width: 50%;
-    background-color: blue;
+    padding: 5vw 1vw ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    font-size: 2.5vw;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu-text{
+    color: pink;
+    height: 100vh;
+    width: 50%;
+    line-height: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9vw;
+    margin-left: 4vw;
+}
+
+#menu-img{
+    height: 100vh;
+    width:  50%;
+    margin-top: 6vw;
+    margin-left: 10vw;
+}
+
+#menu-img img{
+    height: 100%;
+    rotate: 10deg;
+}
+
+#menu-img img:hover{
+    rotate: -10deg;
+    transition: 0.5s ease-in-out;
+}
+
+#menu-text:hover{
+    box-shadow: 10px 10px pink;
+    transition: 0.7s ease-in;
 }
