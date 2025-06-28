@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Zain;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 251, 246);
+}
+
+#nav{
+    background-color: rgb(255, 219, 173);
+    padding: 1vw;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    height: 10vw;
+}
+
+#links{
+    font-size: 1.5vw;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 1vw;
+}
+
+#links a{
+    text-decoration: none;
+    color: black;
+}
+
+#links a:hover{
+    color: #CA7842;
+    transition: 0.5s ease ;
+}
+
+#content{
+    display: flex;
+}
+
+#part1{
+    height: 70vh;
+    width: 40%;
+    position: relative;
+}
+
+#part1 img{
+    height: 120%;
+    transform: scaleX(-1);
+}
+
+#part1 h1{
+    position: absolute;
+    top:50%;
+    left: 20%;
+    font-size: 8vw;
+    color: #ff62c3;
+    transform: rotate(-20deg);
+    font-family: Festive;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
+    line-height: 8vw;
+}
+
+#part2{
+    height: 70vh;
+    width: 50%;
+    background-color: blue;
+}
