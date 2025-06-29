@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Zain;
+    text-decoration: none;
 }
 
 body, html{
@@ -127,6 +128,7 @@ body, html{
     animation-duration: 0.5s;
     animation-direction: alternate;
     transition: 0.7s ease-in;
+    color: #EC9B5A;
 }
 
 @keyframes rotating {
@@ -180,6 +182,18 @@ body, html{
     left: 8.8%;
 }
 
+.about-head{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    /* line-height: 2.5vw; */
+    color: #ff0077;
+    font-weight: 600;
+    text-shadow: 1px 1px pink;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+}
+
 #about-text h1{
     position: absolute;
     left:18%;
@@ -211,7 +225,7 @@ body, html{
 }
 
 #prod-text{
-    color: pink;
+    color: #EC9B5A;
     text-align: center;
     margin-bottom: 2vw;
     font-size: 4vw;
@@ -226,7 +240,7 @@ body, html{
 #product-container {
   width: 15vw;
   height: 20vw;
-  background: #313131;
+  background: #72362E;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -298,4 +312,112 @@ body, html{
 
 #product-container:hover {
   transform: scale(1.04) rotate(-1deg);
+}
+
+#footer{
+    height: 52vh;
+    width: 100%;
+    background-color: #f9bbbb;
+    position: relative;
+    display: flex;
+}
+
+.foot-mimg{
+    height: 52vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.019;
+    position: absolute;
+}
+
+#foot-branding{
+    position: absolute;
+}
+
+#foot-branding img{
+    height: 17vw;
+    width: 17vw;
+    rotate: -10deg;
+}
+
+#foot-branding h1{
+    font-size: 4vw;
+    line-height: 2.5vw;
+    color: #ff0077;
+    font-weight: 600;
+    text-shadow: 1px 1px pink;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+    margin-left: 2vw;
+}
+
+#foot-branding span{
+    font-family: festive;
+    rotate: -2deg;
+    display: inline-block;
+}
+
+#insta{
+    display: grid;
+  place-items: center;
+  font-family: 'Noto Sans', sans-serif;
+    margin: 10px;
+    width:300px; height:50px;
+    border-radius: 25px;
+    color: white;
+    background: radial-gradient(circle at -10% 50%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+     box-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+}
+#fb{
+    display: grid;
+  place-items: center;
+  font-family: 'Noto Sans', sans-serif;
+    margin: 10px;
+    width:300px; height:50px;
+    border-radius: 25px;
+    color: white;
+    background-color: #1d78f2;;
+     box-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+}
+#x{
+    display: grid;
+    place-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 10px;
+    width:300px; height:50px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+}
+
+#socials{
+    position: absolute;
+    left: 37%;
+    top: 20%;
+}
+
+#socials h1{
+    color: rgb(77, 0, 0);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.39);
+    font-size: 3vw;
+    margin-left: 10px;
+}
+
+#socials a div {
+  transition: transform 0.3s ease-in-out;
+}
+
+#socials a:hover div {
+  transform: scale(1.05);
+}
+
+#other-text{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    line-height: 1.5vw;
+    font-size: 1vw;
 }
